@@ -277,8 +277,8 @@ type Pagination {
 }
 
 input PaginationInput {
-  limit: Float = 100
-  page: Float = 1
+  limit: Float! = 100
+  page: Float! = 1
   totalCount: Float = null
 }
 

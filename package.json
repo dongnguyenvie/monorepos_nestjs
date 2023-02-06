@@ -2,13 +2,15 @@
   "name": "noinghe",
   "version": "0.0.0",
   "private": true,
+  "author": "dongnguyenvie@gmail.com",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build --filter=client",
-    "dev": "turbo run dev --filter=client",
+    "build": "turbo run build --filter=client --parallel",
+    "build:graph": "turbo run build --graph=architecture.html",
+    "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },

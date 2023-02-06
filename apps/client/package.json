@@ -1,6 +1,7 @@
 {
     "name": "client",
     "version": "0.0.1",
+    "description": "Frontend",
     "scripts": {
         "dev": "vite --host 0.0.0.0 dev",
         "build": "vite build",
