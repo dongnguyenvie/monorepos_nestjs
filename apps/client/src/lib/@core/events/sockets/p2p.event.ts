@@ -1,4 +1,4 @@
-import type { MediaRequest } from '$lib/@core/enums';
+import type { MediaRequest } from '@noinghe/shared/enums';
 import type { SocketID } from '$lib/types/socket';
 
 export class P2PEvent {

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import dayjs from '$lib/@core/libs/dayjs';
+	import dayjs from '@noinghe/shared/libs/dayjs';
 	import ic_shape from '$lib/icons/ic_shape.svg';
 	import { auth } from '$lib/state';
 	import type { IRoomUser } from '$lib/types';

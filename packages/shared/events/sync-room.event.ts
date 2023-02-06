@@ -1,10 +1,10 @@
-import { RoomEntity } from '@shared/entities';
+// import { RoomEntity } from '@shared/entities';
 import { RoomAction } from '../enums';
 
 export class SyncRoomEvent {
   static NAME = 'SyncRoomEvent';
   static EVENT_NAME = 'sync-rooms';
-  public room: Partial<RoomEntity>;
+  public room: Partial<any>;
   public action: RoomAction;
 
   constructor(partial: Partial<SyncRoomEvent>) {

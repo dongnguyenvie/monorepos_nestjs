@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PLAYHOLDER_AVATAR } from '$lib/@core/constants';
+	import { PLAYHOLDER_AVATAR } from '@noinghe/shared/constants';
 	import type { IRoomUser } from '$lib/types';
 	import { Avatar } from 'flowbite-svelte';
 

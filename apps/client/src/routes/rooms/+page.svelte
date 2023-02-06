@@ -2,14 +2,14 @@
 	import RoomImage from '$lib/icons/image.png';
 	import PlusIcon from '$lib/icons/ic_plus.svg';
 	import { browser } from '$app/environment';
-	import { ROUTES } from '$lib/@core/constants';
+	import { ROUTES } from '@noinghe/shared/constants';
 	import RoomCard from '$lib/components/room-card.svelte';
 	import CreateRoomDialog from '$lib/components/dialogs/create-room-dialog.svelte';
 	import { GQL_getRooms, GQL_onRoomSynced, GQL_deleteRoom, type getRooms$result } from '$houdini';
 	import { onDestroy } from 'svelte';
 	import { auth } from '$lib/state';
 	import Authencation from '$lib/components/authencation.svelte';
-	import { RecordAction } from '$lib/@core/enums';
+	import { RecordAction } from '@noinghe/shared/enums';
 	import { nonNullAssert } from '$lib/@shared/util/operator';
 	import Button from '$lib/components/button.svelte';
 

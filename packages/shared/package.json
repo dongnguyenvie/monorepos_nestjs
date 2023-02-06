@@ -1,13 +1,9 @@
 {
   "name": "@noinghe/shared",
   "version": "0.0.0",
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc -w"
+  "exports": {
+    "./": "./"
   },
-  "files": [
-    "dist/**"
-  ],
   "dependencies": {
     "typescript": "latest"
   }

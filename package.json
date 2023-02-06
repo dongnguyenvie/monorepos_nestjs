@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build --filter=client --parallel",
+    "build": "turbo run build --filter=@noinghe/shared --filter=client",
     "build:graph": "turbo run build --graph=architecture.html",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",

@@ -1,4 +1,4 @@
-import { MediaRequest } from "../../enums/media-request.enum";
+import { MediaRequest } from '../../enums';
 
 export class P2PEvent {
   from!: string;

@@ -1,4 +1,4 @@
-import { EVENT_ROOM_CLIENT } from '$lib/@core/constants';
+import { EVENT_ROOM_CLIENT } from '@noinghe/shared/constants';
 import { socketState } from '$lib/state';
 import { SocketStatus } from '$lib/types/socket';
 import { io } from '..';

@@ -1,4 +1,4 @@
-import { UserConnectionStatus } from '$lib/@core/enums';
+import { UserConnectionStatus } from '@noinghe/shared/enums';
 import type { Client } from '$lib/types';
 import SimplePeer from 'simple-peer';
 

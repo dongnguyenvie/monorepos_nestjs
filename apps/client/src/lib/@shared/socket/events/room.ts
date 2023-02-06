@@ -3,21 +3,21 @@ import {
 	EVENT_ROOM_PERSONAL_CLIENT,
 	EVENT_ROOM_SERVER,
 	USER_ACCESSABLE
-} from '$lib/@core/constants';
+} from '@noinghe/shared/constants';
 import { io } from '..';
 import SimplePeer, { createClient } from '$lib/@shared/libs/simple-peerjs';
 import { checkStream, getUserMediaHelper } from '$lib/@shared/util/media';
 import { appSettings, auth, room } from '$lib/state';
 import { browser, dev } from '$app/environment';
-import { P2PEvent, ClientStateEvent, CallEvent } from '$lib/@core/events/sockets';
+import { P2PEvent, ClientStateEvent, CallEvent } from '@noinghe/shared/events/sockets';
 import type { SocketID } from '$lib/types/socket';
-import { MediaRequest, UserConnectionStatus } from '$lib/@core/enums';
+import { MediaRequest, UserConnectionStatus } from '@noinghe/shared/enums';
 import { get } from 'svelte/store';
 import { JoinRoomEvent } from './join-room.event';
 import { ClientShareable, type Client } from '$lib/types';
-import type { UserConfig } from '$lib/@core/interfaces/room.interface';
+import type { UserConfig } from '@noinghe/shared/interfaces/room.interface';
 import _ from 'underscore';
-import { ChatEvent, MessageType } from '$lib/@core/events/sockets/chat.event';
+import { ChatEvent, MessageType } from '@noinghe/shared/events/sockets/chat.event';
 import type { UserID, UserInfo } from '$lib/types/user.type';
 
 const { myClient, watchersMap, onUpdateMessage, accessable, currentRoomId, clientsMap } = room;
