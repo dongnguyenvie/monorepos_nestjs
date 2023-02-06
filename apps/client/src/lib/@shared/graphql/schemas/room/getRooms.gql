@@ -1,0 +1,28 @@
+query getRooms($input: GetRoomsIntput!) {
+	getRooms(input: $input) {
+		data {
+			id
+			capacity
+			description
+			language
+			topic
+			clients {
+				id
+				avatar
+				name
+			}
+			creator {
+				id
+				avatar
+				name
+			}
+			createdAt
+			updatedAt
+		}
+		pagination {
+			limit
+			page
+			totalCount
+		}
+	}
+}

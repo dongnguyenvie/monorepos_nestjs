@@ -1,0 +1,24 @@
+subscription onRoomSynced {
+	onRoomSynced {
+		action
+		room {
+			id
+			capacity
+			description
+			language
+			topic
+			clients {
+				id
+				avatar
+				name
+			}
+			creator {
+				id
+				avatar
+				name
+			}
+			createdAt
+			updatedAt
+		}
+	}
+}
