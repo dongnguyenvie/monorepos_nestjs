@@ -1,0 +1,12 @@
+subscription exchangeRefV1Sub {
+  exchangeRefV1Sub {
+    t
+    code
+    sell
+    buy
+    bid
+    ask
+    sp
+    changed
+  }
+}

@@ -1,0 +1,23 @@
+query getUsers($input: GetUsersInput!) {
+  getUsers(input: $input) {
+    data {
+      id
+      # username
+      email
+      # mobile
+      fullName
+      # profile
+      roles {
+        id
+        title
+      }
+      createdAt
+      updatedAt
+    }
+    pagination {
+      limit
+      page
+      totalCount
+    }
+  }
+}

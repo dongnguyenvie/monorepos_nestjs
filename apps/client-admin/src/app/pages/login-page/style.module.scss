@@ -1,0 +1,45 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .containerWrapper {
+    width: 700px;
+
+    .leftContent {
+      display: flex;
+      justify-content: center;
+
+      .title {
+        text-align: center;
+      }
+
+      .labelError {
+        margin-bottom: 14px;
+      }
+
+      .loginFormBtn {
+        width: 100%;
+      }
+
+      .newAccount {
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+
+    .rightContent {
+      background: linear-gradient(180deg, rgba(93, 244, 255, 1) 0%, rgba(77, 175, 254, 1) 100%);
+      border-radius: 0 20px 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h1,
+      h3 {
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.news-setting-page .page {
+  &__wrapper {
+    min-height: 300px;
+  }
+  &__nonactive {
+    background: yellow;
+    padding: 10px 0px;
+  }
+
+  &__active {
+    background: green;
+    padding: 10px 0px;
+  }
+  &__item {
+    width: 100%;
+    display: inline-flex;
+    border: 1px solid var(--gray);
+    margin-bottom: 4px;
+    background: var(--white);
+    padding: 2px 4px;
+    &--active {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

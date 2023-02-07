@@ -1,0 +1,23 @@
+.role_page {
+  &__cursor_point {
+    cursor: pointer;
+  }
+  &__100_scroll {
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  &__default_scp {
+    background: #ffff;
+    overflow: auto;
+    padding: 5px 10px;
+    max-height: 200px;
+  }
+  &__default_scp_tag {
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  &__tag {
+    margin-top: 4px;
+  }
+}

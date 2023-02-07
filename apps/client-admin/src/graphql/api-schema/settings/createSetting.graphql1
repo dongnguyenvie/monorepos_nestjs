@@ -1,0 +1,5 @@
+mutation createSetting($setting: CreateSettingDTO!){
+  createSetting(setting: $setting){
+    id
+  }
+}

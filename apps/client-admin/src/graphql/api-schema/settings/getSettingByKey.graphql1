@@ -1,0 +1,8 @@
+query getSettingByKey($setting: GetSettingByKeyDTO!) {
+  getSettingByKey(setting: $setting) {
+    id
+    key
+    stringValue
+    jsonValue
+  }
+}

@@ -1,0 +1,5 @@
+mutation updateRole($input: UpdateRoleIntput!) {
+  updateRole(input: $input) {
+    id
+  }
+}

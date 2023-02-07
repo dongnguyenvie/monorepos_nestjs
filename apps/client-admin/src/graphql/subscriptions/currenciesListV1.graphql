@@ -1,0 +1,8 @@
+subscription currenciesListV1Sub {
+  currenciesListV1Sub {
+    s
+    bid
+    ask
+    t
+  }
+}

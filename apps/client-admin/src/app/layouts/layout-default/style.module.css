@@ -1,0 +1,38 @@
+.wrapper {
+  min-height: 100vh;
+  height: 100%;
+}
+.btnToggleNavigation {
+  color: white;
+  padding-left: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.contentWrapper {
+  margin: '0 16px';
+  padding: 10px 20px;
+}
+.contentInner {
+  padding: 24;
+  min-height: 360;
+}
+.navWrapper {
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+/* .navWrapper::-webkit-scrollbar {
+  width: 5px;
+}
+.navWrapper::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 6px;
+} */
+.navWrapper::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.navWrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,8 @@
+query getDeletedRoles {
+  getDeletedRoles {
+    id
+    title
+    isDefault
+    scp
+  }
+}

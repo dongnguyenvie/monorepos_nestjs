@@ -1,0 +1,5 @@
+mutation recoverUser($input: RecoverUserInput!) {
+  recoverUser(input: $input) {
+    id
+  }
+}

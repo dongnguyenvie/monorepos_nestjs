@@ -1,0 +1,9 @@
+query getSetting{
+  getSettings{
+    id
+    createdAt
+    key
+    jsonValue
+    stringValue
+  }
+}

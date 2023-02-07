@@ -1,0 +1,8 @@
+query getRoleById($input: GetRoleByIdInput!) {
+  getRoleById(input: $input) {
+    id
+    title
+    isDefault
+    scp
+  }
+}

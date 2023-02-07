@@ -1,0 +1,22 @@
+query permissions {
+  __schema {
+    queryType {
+      fields {
+        name
+        description
+      }
+    }
+    mutationType {
+      fields {
+        name
+        description
+      }
+    }
+    subscriptionType {
+      fields {
+        name
+        description
+      }
+    }
+  }
+}

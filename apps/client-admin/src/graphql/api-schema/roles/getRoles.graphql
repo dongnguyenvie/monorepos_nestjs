@@ -1,0 +1,8 @@
+query getRoles {
+  getRoles {
+    id
+    title
+    isDefault
+    scp
+  }
+}

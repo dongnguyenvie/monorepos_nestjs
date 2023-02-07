@@ -1,0 +1,194 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+.slider-custom {
+  // width: 100%;
+  margin: 0 auto;
+  max-height: 300px;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+  }
+}
+
+.line-separate {
+  margin: -2px 0 15px !important;
+  border-top: 1px solid #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2px;
+  text-transform: uppercase;
+}
+.hotTableTools {
+  border-top: 1px dashed #d9d9d9;
+  display: flex;
+  justify-content: flex-end;
+  & > div {
+  }
+  label.ant-radio-button-wrapper {
+    // border: 0px;
+    background-color: transparent;
+    border-color: transparent;
+    border-left: transparent;
+    &::before {
+      background-color: transparent;
+    }
+  }
+}
+.hotTableWrapper {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+.hotTablePaginationWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.handsontableCustom {
+  thead th {
+    background-color: #1879bf;
+    color: #fff;
+  }
+  tbody {
+    th.ht__highlight.currentColumn,
+    th.ht__active_highlight.currentColumn {
+      background-color: #166ba8;
+      color: #fff;
+    }
+  }
+  thead {
+    th.ht__highlight.currentColumn,
+    th.ht__active_highlight.currentColumn {
+      background-color: #166ba8;
+      color: #fff;
+    }
+  }
+}
+
+.postpage__quill {
+  background: white;
+  .ql-editor {
+    min-height: 200px;
+  }
+}
+
+.rolepage__checkbox_hover:hover {
+  background: black;
+  color: #fff;
+}
+
+.pc-menu {
+  .sub-menu {
+    overflow: unset !important;
+    text-overflow: unset !important;
+    white-space: break-spaces;
+    padding-left: 13px !important;
+    height: auto !important;
+    line-height: 18px !important;
+    margin-bottom: 0px;
+    // width: 100%;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .ant-menu-item-selected {
+    background: none !important;
+    color: #fff;
+    font-weight: bold;
+  }
+  .ant-menu-submenu-open {
+    padding: 7px 0 8px !important;
+    .ant-menu-sub {
+      padding: 7px 0 8px !important;
+    }
+  }
+  .root-menu1 {
+    & .ant-menu-submenu-title {
+      padding-left: 7px !important;
+    }
+  }
+  .root-menu2 {
+    padding-left: 7px !important;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.table-reponsive {
+  overflow-x: auto;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.circle-status {
+  height: 10px;
+  width: 10px;
+  opacity: 0;
+  animation: pulsate 1.5s ease-out;
+  animation-iteration-count: infinite;
+  transition: background-color 1.5s linear;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px #458a64;
+}
+
+.offline {
+  background: red;
+}
+
+.online {
+  background: rgb(6, 212, 6);
+}
+
+.some-other-status {
+  background: blue;
+}
+
+.current-exchange-rate-component {
+  & table,
+  & th,
+  & td {
+    border: 1px solid black;
+    padding: 4px;
+  }
+}
+
+@keyframes update-color {
+  from {
+    color: red;
+  }
+  to {
+    color: unset;
+  }
+}
+
+.cell-update {
+  animation: 1s update-color;
+}
