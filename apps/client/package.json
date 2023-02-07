@@ -1,5 +1,5 @@
 {
-	"name": "client",
+	"name": "@noinghe/client",
 	"version": "0.0.1",
 	"description": "Frontend",
 	"scripts": {

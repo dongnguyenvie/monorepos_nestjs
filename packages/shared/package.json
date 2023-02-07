@@ -8,7 +8,7 @@
     "clean": "rm -rf ./dist/"
   },
   "dependencies": {
-    "typescript": "latest",
+    "typescript": "4.9.5",
     "dayjs": "latest"
   }
 }

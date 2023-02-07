@@ -8,6 +8,12 @@
     "declaration": true,
     "declarationMap": true,
     "rootDir": "src",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "ESNext"
+    ]
   },
   "exclude": [
     "dist",
