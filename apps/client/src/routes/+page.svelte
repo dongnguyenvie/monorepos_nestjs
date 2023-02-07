@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ROUTES } from '@noinghe/shared/constants';
+	import { ROUTES } from '@noinghe/shared/src/constants';
 
 	import Redirect from '$lib/components/redirect.svelte';
 </script>

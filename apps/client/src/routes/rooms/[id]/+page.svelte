@@ -22,7 +22,7 @@
 	import UserCard from '$lib/components/user-card.svelte';
 	import ChatInput from '$lib/components/chat/chat-input.svelte';
 	import Icon from 'svelte-awesome';
-	import { USER_ACCESSABLE } from '@noinghe/shared/constants';
+	import { USER_ACCESSABLE } from '@noinghe/shared/src/constants';
 	import { Avatar } from 'flowbite-svelte';
 	import DeviceSetting from '$lib/components/device-setting/device-setting.svelte';
 

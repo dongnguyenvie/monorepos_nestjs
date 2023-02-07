@@ -1,0 +1,1 @@
+{"version":3,"file":"p2p.event.d.ts","sourceRoot":"","sources":["../../../src/events/sockets/p2p.event.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,YAAY,EAAE,MAAM,aAAa,CAAC;AAE3C,qBAAa,QAAQ;IACnB,IAAI,EAAG,MAAM,CAAC;IACd,EAAE,EAAG,MAAM,CAAC;IACZ,OAAO,EAAG,MAAM,CAAC;IACjB,MAAM,EAAE,YAAY,CAAC;gBAET,OAAO,EAAE,OAAO,CAAC,QAAQ,CAAC;CAGvC"}

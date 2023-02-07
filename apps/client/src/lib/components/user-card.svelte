@@ -5,7 +5,7 @@
 	import { faMicrophoneSlash, faVideoCamera, faGear } from '@fortawesome/free-solid-svg-icons';
 	import { onDestroy } from 'svelte';
 	import type { UserInfo } from '$lib/types/user.type';
-	import { PLAYHOLDER_AVATAR } from '@noinghe/shared/constants';
+	import { PLAYHOLDER_AVATAR } from '@noinghe/shared/src/constants';
 	import { Dropdown, DropdownItem } from 'flowbite-svelte';
 
 	export let watchersMap = {} as Record<string, any>;

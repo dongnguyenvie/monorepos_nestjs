@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 	import { auth } from '$lib/state';
 	import { createForm } from 'svelte-forms-lib';
-	import { ROUTES } from '@noinghe/shared/constants';
+	import { ROUTES } from '@noinghe/shared/src/constants';
 	import type { Auth } from '$lib/types';
 	import jwtDecode from 'jwt-decode';
 	import * as yup from 'yup';

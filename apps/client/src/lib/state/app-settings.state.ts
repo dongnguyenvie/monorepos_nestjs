@@ -5,7 +5,7 @@ import {
 	DEFAULT_WEBCAM,
 	DEFAULT_WEBCAM_RESOLUTION,
 	WEBCAM_RESOLUTION_CONFIG
-} from '@noinghe/shared/constants';
+} from '@noinghe/shared/src/constants';
 import { SideBarMode, type App, type MicConfig, type WebcamSetting } from '$lib/types';
 import { derived, writable } from 'svelte/store';
 

@@ -1,0 +1,1 @@
+{"version":3,"file":"client-state.event.d.ts","sourceRoot":"","sources":["../../../src/events/sockets/client-state.event.ts"],"names":[],"mappings":"AAAA,qBAAa,gBAAgB;IAC3B,OAAO,EAAG,OAAO,CAAC;IAClB,OAAO,EAAG,OAAO,CAAC;IAClB,IAAI,EAAG,MAAM,CAAC;IACd,MAAM,EAAG,MAAM,CAAC;IAChB,UAAU,EAAE,MAAM,GAAG,IAAI,CAAQ;IACjC,KAAK,EAAG,MAAM,CAAC;gBAEH,OAAO,EAAE,OAAO,CAAC,gBAAgB,CAAC;CAG/C"}

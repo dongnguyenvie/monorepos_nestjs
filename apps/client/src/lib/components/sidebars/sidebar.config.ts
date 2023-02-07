@@ -1,4 +1,4 @@
-import { ROUTES } from '@noinghe/shared/constants';
+import { ROUTES } from '@noinghe/shared/src/constants';
 
 export const sidebarConfig = [
 	{

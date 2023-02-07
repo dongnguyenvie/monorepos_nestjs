@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PLAYHOLDER_AVATAR = exports.ROOM_ID_LENGTH = exports.REFRESH_TOKEN_EXPIRES = exports.ACCESS_TOKEN_EXPIRES = exports.TIMESTAMP_FORMAT = exports.TIME_ZONE = exports.saltOrRounds = void 0;
+exports.saltOrRounds = 10;
+exports.TIME_ZONE = 'Asia/Ho_Chi_Minh';
+exports.TIMESTAMP_FORMAT = 'YYYY-MM-DD HH:mm:ss';
+exports.ACCESS_TOKEN_EXPIRES = 86400;
+exports.REFRESH_TOKEN_EXPIRES = '8h';
+exports.ROOM_ID_LENGTH = 5;
+exports.PLAYHOLDER_AVATAR = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y';

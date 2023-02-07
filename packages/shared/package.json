@@ -1,10 +1,14 @@
 {
   "name": "@noinghe/shared",
   "version": "0.0.0",
-  "exports": {
-    "./": "./"
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "clean": "rm -rf ./dist/"
   },
   "dependencies": {
-    "typescript": "latest"
+    "typescript": "latest",
+    "dayjs": "latest"
   }
 }

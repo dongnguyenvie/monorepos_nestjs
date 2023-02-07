@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { ROUTES } from '@noinghe/shared/constants';
+	import { ROUTES } from '@noinghe/shared/src/constants';
 	import RingIcon from '$lib/icons/ic_ring.svg';
 	import UserGroupIcon from '$lib/icons/ic_user_group.svg';
 	import { logout, userPicture } from '$lib/state';

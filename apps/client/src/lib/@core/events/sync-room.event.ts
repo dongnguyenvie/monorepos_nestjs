@@ -1,4 +1,4 @@
-// import { RoomAction } from '@noinghe/shared/enums';
+// import { RoomAction } from '@noinghe/shared/src/enums';
 // import { RoomEntity } from '@modules/rooms/entity/room.entity';
 // socketState
 

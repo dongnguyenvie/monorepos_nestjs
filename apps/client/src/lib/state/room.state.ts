@@ -5,7 +5,7 @@ import type { SocketID } from '$lib/types/socket';
 import _ from 'underscore';
 import { auth } from './auth.state';
 import type { UserID, UserInfo } from '$lib/types/user.type';
-import { USER_ACCESSABLE } from '@noinghe/shared/constants';
+import { USER_ACCESSABLE } from '@noinghe/shared/src/constants';
 
 interface RoomState {
 	socketId: string;

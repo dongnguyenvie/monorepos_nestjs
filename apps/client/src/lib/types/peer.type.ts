@@ -1,4 +1,4 @@
-import type { UserConfig } from '@noinghe/shared/interfaces';
+import type { UserConfig } from '@noinghe/shared/src/interfaces';
 import type SimplePeer from 'simple-peer';
 import type { SocketID } from './socket';
 

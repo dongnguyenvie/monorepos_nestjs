@@ -4,7 +4,7 @@ import type { CredentialResponse } from 'google-one-tap';
 import type Google from 'google-one-tap';
 import { writable, get, derived } from 'svelte/store';
 import { goto } from '$app/navigation';
-import { ROUTES } from '@noinghe/shared/constants';
+import { ROUTES } from '@noinghe/shared/src/constants';
 import jwtDecode from 'jwt-decode';
 import { GQL_signinByGoogle } from '$houdini';
 import { getApiEndPoint } from '$lib/@shared/util/env';

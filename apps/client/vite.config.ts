@@ -10,4 +10,5 @@ const config: UserConfig = {
 	plugins: [houdini(), sveltekit()]
 };
 
+// '@noinghe/shared
 export default config;

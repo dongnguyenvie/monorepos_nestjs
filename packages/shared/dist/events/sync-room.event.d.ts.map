@@ -1,0 +1,1 @@
+{"version":3,"file":"sync-room.event.d.ts","sourceRoot":"","sources":["../../src/events/sync-room.event.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,UAAU,EAAE,MAAM,UAAU,CAAC;AAEtC,qBAAa,aAAa;IACxB,MAAM,CAAC,IAAI,SAAmB;IAC9B,MAAM,CAAC,UAAU,SAAgB;IAC1B,IAAI,EAAE,OAAO,CAAC,GAAG,CAAC,CAAC;IACnB,MAAM,EAAE,UAAU,CAAC;gBAEd,OAAO,EAAE,OAAO,CAAC,aAAa,CAAC;IAI3C,IAAI,MAAM;;;MAKT;CACF"}

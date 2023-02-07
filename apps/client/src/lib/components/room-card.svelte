@@ -1,5 +1,5 @@
 <script lang="ts">
-	import dayjs from '@noinghe/shared/libs/dayjs';
+	import dayjs from '@noinghe/shared/src/libs/dayjs';
 	import ic_shape from '$lib/icons/ic_shape.svg';
 	import { auth } from '$lib/state';
 	import type { IRoomUser } from '$lib/types';
@@ -25,6 +25,8 @@
 	export let lastUpdatedAt: number;
 
 	const roomExpired = parseInt(import.meta.env.VITE_ROOM_EXPIRED || 300);
+
+	console.log(111, dayjs);
 
 	$: canClear = !clients.length && dayjs().unix() - lastUpdatedAt > roomExpired;
 
