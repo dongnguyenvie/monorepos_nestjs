@@ -1,0 +1,51 @@
+### audio
+```
+<div style="position: fixed; z-index: -1; display: none">
+  <audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio
+  ><audio
+    src="blob:https://www.free4talk.com/4c92ca20-3d74-4541-8a30-8c27d6e592f7"
+  ></audio>
+</div>
+
+```

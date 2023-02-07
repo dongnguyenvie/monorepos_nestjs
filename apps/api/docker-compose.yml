@@ -1,0 +1,45 @@
+version: '3.4'
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      # Only will build development stage from our dockerfile
+      target: development
+    env_file:
+      - .env.local
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    # Run in dev Mode: npm run start:dev
+    command: yarn start:dev
+    ports:
+      - 3000:3000
+    depends_on:
+      - redis
+      - postgres
+  redis:
+    # Name of container
+    image: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - redis:/data
+  postgres:
+    image: postgres
+    restart: always
+    env_file:
+      - .env.local
+    # environment:
+    #   - POSTGRES_DB:${DATABASE_NAME}
+    #   - POSTGRES_USER:${DATABASE_USERNAME}
+    #   - POSTGRES_PASSWORD:${DATABASE_PASSWORD}
+    ports:
+      - '5432:5432'
+    volumes:
+      - docker-nest-postgres:/var/lib/postgresql/data
+
+volumes:
+  docker-nest-postgres:
+  redis:
+    driver: local
