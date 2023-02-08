@@ -11,20 +11,16 @@
 	compound = "true"
 	newrank = "true"
 	subgraph "root" {
+		"[root] @noinghe/api#build" -> "[root] @noinghe/shared#build"
+		"[root] @noinghe/client#build" -> "[root] @noinghe/shared#build"
+		"[root] @noinghe/client#build" -> "[root] eslint-config-custom#build"
+		"[root] @noinghe/client-admin#build" -> "[root] @noinghe/shared#build"
+		"[root] @noinghe/client-admin#build" -> "[root] eslint-config-custom#build"
+		"[root] @noinghe/client-admin#build" -> "[root] tsconfig#build"
 		"[root] @noinghe/shared#build" -> "[root] ___ROOT___#build"
 		"[root] ___ROOT___#build" -> "[root] ___ROOT___"
-		"[root] api#build" -> "[root] @noinghe/shared#build"
-		"[root] client#build" -> "[root] ___ROOT___#build"
-		"[root] docs#build" -> "[root] eslint-config-custom#build"
-		"[root] docs#build" -> "[root] tsconfig#build"
-		"[root] docs#build" -> "[root] ui#build"
 		"[root] eslint-config-custom#build" -> "[root] ___ROOT___#build"
 		"[root] tsconfig#build" -> "[root] ___ROOT___#build"
-		"[root] ui#build" -> "[root] eslint-config-custom#build"
-		"[root] ui#build" -> "[root] tsconfig#build"
-		"[root] web#build" -> "[root] eslint-config-custom#build"
-		"[root] web#build" -> "[root] tsconfig#build"
-		"[root] web#build" -> "[root] ui#build"
 	}
 }
 `.replace(/\_\_\_ROOT\_\_\_/g, "Root").replace(/\[root\]/g, "");new Viz().renderSVGElement(s).then(el => document.body.appendChild(el)).catch(e => console.error(e));
