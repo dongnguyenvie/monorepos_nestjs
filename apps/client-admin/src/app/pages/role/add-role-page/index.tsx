@@ -139,22 +139,26 @@ export function AddRolePage() {
 
             <Form.Item label="Quyền hạn" name={'scp'} rules={[{ required: true, message: 'Quyền không được để trống' }]}>
               <Checkbox.Group style={{ width: '100%' }}>
-                {scopePrivateListGroupKeys.map(groupNm => (
-                  <Form.Item label={groupNm} key={groupNm}>
-                    <Row gutter={16} style={boxStyle}>
-                      {_get(scopePrivateListGroup, groupNm, []).map(info => (
-                        <Col span={12} key={info.name}>
-                          <Tooltip placement="top" title={info.name}>
-                            <Checkbox value={info.name} className="rolepage__checkbox_hover">
-                              {_get(info, 'api.title', info.name)} {!!info.api.isSystem && <b style={{ color: 'red' }}>(+)</b>}
-                              {info.api.isSub && <WifiOutlined style={{ color: 'red' }} />}
-                            </Checkbox>
-                          </Tooltip>
-                        </Col>
-                      ))}
-                    </Row>
-                  </Form.Item>
-                ))}
+                <Row gutter={24}>
+                  {scopePrivateListGroupKeys.map(groupNm => (
+                    <Col span={24}>
+                      <Form.Item label={groupNm} key={groupNm}>
+                        <Row gutter={[16, 16]} style={boxStyle}>
+                          {_get(scopePrivateListGroup, groupNm, []).map(info => (
+                            <Col span={12} key={info.name}>
+                              <Tooltip placement="top" title={info.name}>
+                                <Checkbox value={info.name} className="rolepage__checkbox_hover">
+                                  {_get(info, 'api.title', info.name)} {!!info.api.isSystem && <b style={{ color: 'red' }}>(+)</b>}
+                                  {info.api.isSub && <WifiOutlined style={{ color: 'red' }} />}
+                                </Checkbox>
+                              </Tooltip>
+                            </Col>
+                          ))}
+                        </Row>
+                      </Form.Item>
+                    </Col>
+                  ))}
+                </Row>
               </Checkbox.Group>
             </Form.Item>
 
