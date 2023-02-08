@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from 'react'
 import { MESSAGES, SETUP_SCHEDULE_CRONB } from 'utils/constants'
 import _get from 'lodash/get'
-import { Form, Input, Button, Space, Typography, Divider, Row,  notification, Select, Checkbox, Tag } from 'antd'
+import { Form, Input, Button, Space, Typography, Divider, Row, notification, Select, Checkbox, Tag } from 'antd'
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons'
 import { Spin } from 'app/components/Spin'
 
@@ -118,7 +118,7 @@ export const ListSchedulePage = () => {
         </p>
         <p>
           <b>schedule</b>:{' '}
-          <a href="https://crontab.guru/" target="_blank">
+          <a href="https://crontab.guru/" target="_blank" rel="noreferrer">
             https://crontab.guru/
           </a>
         </p>
@@ -147,7 +147,7 @@ export const ListSchedulePage = () => {
               <Form.List name="crons">
                 {(fields, { add, remove }) => (
                   <>
-                    {fields.map(({ key, name, fieldKey, ...restField }) => (
+                    {/* {fields.map(({ key, name, fieldKey, ...restField }) => (
                       <Space key={key} style={{ display: 'flex', ...boxStyle, flexWrap: 'wrap', flexDirection: 'column', width: '100%' }} align="baseline">
                         <Space style={{ display: 'flex' }} align="baseline">
                           <Form.Item
@@ -189,7 +189,7 @@ export const ListSchedulePage = () => {
                           <TextArea placeholder="Mô tả" autoSize={{ minRows: 2, maxRows: 6 }} />
                         </Form.Item>
                       </Space>
-                    ))}
+                    ))} */}
                     <Form.Item>
                       <Button type="dashed" onClick={() => add()} block icon={<PlusOutlined />}>
                         Thêm cài đặt

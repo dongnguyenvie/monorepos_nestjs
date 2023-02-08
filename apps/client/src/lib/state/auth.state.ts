@@ -4,11 +4,10 @@ import type { CredentialResponse } from 'google-one-tap';
 import type Google from 'google-one-tap';
 import { writable, get, derived } from 'svelte/store';
 import { goto } from '$app/navigation';
-import { ROUTES } from '@noinghe/shared/src/constants';
+import { PLAYHOLDER_AVATAR, ROUTES } from '@noinghe/shared/src/constants';
 import jwtDecode from 'jwt-decode';
 import { GQL_signinByGoogle } from '$houdini';
 import { getApiEndPoint } from '$lib/@shared/util/env';
-import { PLAYHOLDER_AVATAR } from '$lib/@core/constants';
 
 let google: typeof Google;
 const USER_INFO = 'USER_INFO';

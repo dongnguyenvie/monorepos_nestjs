@@ -1,10 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { useBoolean } from 'react-use'
-import { Upload, message } from 'antd'
+import { Upload, message, Modal } from 'antd'
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons'
 import { fetchUploadFile } from 'utils/services/file.service'
 import _get from 'lodash/get'
-import { Modal } from '../Modal'
 
 function beforeUpload(file) {
   const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png'
@@ -98,7 +97,7 @@ export const AvatarUpload = (props: AvatarUploadProps) => {
         {/* {imageUrl ? <img src={imageUrl} alt="avatar" style={{ width: '100%' }} /> : uploadButton} */}
       </Upload>
       <Modal
-        visible={!!previewVisible}
+        open={!!previewVisible}
         title={imageTitle}
         footer={null}
         onCancel={() => {

@@ -59,3 +59,5 @@ export const JoditEditor = forwardRef((props: JoditProps, ref) => {
 
   return <textarea ref={textArea} />
 })
+
+JoditEditor.displayName = 'JoditEditor'

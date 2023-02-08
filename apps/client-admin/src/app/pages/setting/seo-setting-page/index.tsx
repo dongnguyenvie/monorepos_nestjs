@@ -1,9 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { Form, Input, Button, Space, Row, Col, Divider, Typography, notification } from 'antd'
+import { Form, Input, Button, Space, Row, Col, Divider, Typography, notification, Modal } from 'antd'
 import { MinusCircleOutlined, PlusOutlined, EditOutlined } from '@ant-design/icons'
 import { useForm } from 'antd/lib/form/Form'
 import { MESSAGES, SEO_ROUTING } from 'utils/constants'
-import { Modal } from 'app/components/Modal'
 const { Title } = Typography
 
 let useGetSettingByKeyQuery: any = () => ({} as any)
@@ -111,9 +110,9 @@ export const SeoSettingPage = () => {
             <>
               {fields.map(({ key, name, fieldKey, ...restField }) => (
                 <Space key={key} style={{ display: 'flex', marginBottom: 8, flex: 1 }} align="baseline">
-                  <Form.Item {...restField} name={[name, 'slug']} fieldKey={[fieldKey, 'slug']} rules={[{ required: true, message: 'Vui lòng không để trống đường dẫn' }]}>
+                  {/* <Form.Item {...restField} name={[name, 'slug']} fieldKey={[fieldKey, 'slug']} rules={[{ required: true, message: 'Vui lòng không để trống đường dẫn' }]}>
                     <Input placeholder="Đường dẫn page" />
-                  </Form.Item>
+                  </Form.Item> */}
 
                   <input style={{ width: '200px' }} placeholder={(tempDataSeoPage[name] && tempDataSeoPage[name].title) || 'Title'} disabled />
 
@@ -196,7 +195,7 @@ const EditingPopup = (props: EditingPopupProps) => {
 
   return (
     <>
-      <Modal title="Chỉnh meta SEO cho page" visible={props.visible} onOk={handleOk} onCancel={handleCancel} okButtonProps={{}} cancelButtonProps={{}}>
+      <Modal title="Chỉnh meta SEO cho page" open={props.visible} onOk={handleOk} onCancel={handleCancel} okButtonProps={{}} cancelButtonProps={{}}>
         <div style={{ maxHeight: '80vh', overflowY: 'auto' }}>
           <Form layout="vertical" form={form}>
             {SEO_FIELDS.map(f => (

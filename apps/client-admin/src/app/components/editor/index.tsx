@@ -54,3 +54,5 @@ export const EditorCustom = forwardRef((props: EditorCustomProps, ref: any) => {
     />
   )
 })
+
+EditorCustom.displayName = 'EditorCustom'

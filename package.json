@@ -8,9 +8,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build --filter=@noinghe/shared --filter=client",
+    "build": "turbo run build",
     "build:graph": "turbo run build --graph=architecture.html",
     "dev": "turbo run dev --parallel",
+    "dev:admin": "turbo run dev --filter=@noinghe/api --filter=@noinghe/client-admin --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },

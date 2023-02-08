@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
-import { Button, Col, Divider, Input,  notification, Row, Typography } from 'antd'
+import { Button, Col, Divider, Input, Modal, notification, Row, Typography } from 'antd'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 import { sampleData } from './sampledata'
 import './style.scss'
@@ -9,7 +9,6 @@ import _differenceBy from 'lodash/differenceBy'
 import _isEqualWith from 'lodash/isEqualWith'
 import { DragBox } from './components/DragBox'
 import { MESSAGES, SETUP_NEWS_BLOCK } from 'utils/constants'
-import { Modal } from 'app/components/Modal'
 
 let useGetCategoriesQuery: any = () => ({})
 type GetCategoriesQuery = any
@@ -118,7 +117,7 @@ export const NewsSettingPage = () => {
           <Col xs={24}>
             <Modal
               title="Chuyên mục"
-              visible={isModalVisible}
+              open={isModalVisible}
               onOk={handleModalOk}
               onCancel={() => {
                 setSelected(null)
