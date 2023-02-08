@@ -4,13 +4,13 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "4.6.2",
-    "@apollo/client": "3.3.16",
+    "@apollo/client": "3.7.7",
     "@graphql-codegen/cli": "3.0.0",
     "@graphql-codegen/client-preset": "2.0.0",
-    "@graphql-codegen/introspection": "1.18.2",
-    "@graphql-codegen/typescript": "1.22.0",
-    "@graphql-codegen/typescript-operations": "1.17.16",
-    "@graphql-codegen/typescript-react-apollo": "2.2.4",
+    "@graphql-codegen/introspection": "3.0.0",
+    "@graphql-codegen/typescript": "3.0.0",
+    "@graphql-codegen/typescript-operations": "3.0.0",
+    "@graphql-codegen/typescript-react-apollo": "3.3.7",
     "@graphql-typed-document-node/core": "3.1.1",
     "@handsontable/react": "4.0.0",
     "@noinghe/shared": "*",
@@ -147,5 +147,8 @@
     "eslint-config-custom": "*",
     "tsconfig": "*",
     "typescript-plugin-css-modules": "2.4.0"
+  },
+  "resolutions": {
+    "graphql": "^16.6.0"
   }
 }
