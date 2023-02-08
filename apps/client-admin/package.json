@@ -5,11 +5,13 @@
   "dependencies": {
     "@ant-design/icons": "4.6.2",
     "@apollo/client": "3.3.16",
-    "@graphql-codegen/cli": "1.21.4",
+    "@graphql-codegen/cli": "3.0.0",
+    "@graphql-codegen/client-preset": "2.0.0",
     "@graphql-codegen/introspection": "1.18.2",
     "@graphql-codegen/typescript": "1.22.0",
     "@graphql-codegen/typescript-operations": "1.17.16",
     "@graphql-codegen/typescript-react-apollo": "2.2.4",
+    "@graphql-typed-document-node/core": "3.1.1",
     "@handsontable/react": "4.0.0",
     "@noinghe/shared": "*",
     "@reduxjs/toolkit": "1.3.2",
@@ -34,7 +36,7 @@
     "eslint-config-prettier": "6.10.1",
     "eslint-plugin-prettier": "3.1.2",
     "fontfaceobserver": "2.1.0",
-    "graphql": "15.5.0",
+    "graphql": "^16.6.0",
     "handsontable": "8.0.0",
     "husky": "4.2.3",
     "i18next": "19.3.4",
@@ -91,7 +93,7 @@
     "generate": "cross-env TS_NODE_PROJECT='./internals/ts-node.tsconfig.json' plop --plopfile internals/generators/plopfile.ts",
     "prettify": "prettier --write",
     "generate:type-server": "npx @manifoldco/swagger-to-ts http://127.0.0.1:8000/docs/swagger/?format=.json --output src/types/generate/index.ts",
-    "generate-graphql:local": "graphql-codegen --config ./src/graphql/codegen/config-local.yml",
+    "generate-graphql:local": "graphql-codegen",
     "codegen": "npm run generate-graphql:local",
     "start:dev": "npm run codegen && npm run start",
     "dev": "npm run start"
@@ -141,9 +143,9 @@
   "devDependencies": {
     "@types/lodash": "4.14.160",
     "@types/react-beautiful-dnd": "13.1.0",
+    "eslint": "7.32.0",
     "eslint-config-custom": "*",
     "tsconfig": "*",
-    "typescript-plugin-css-modules": "2.4.0",
-    "eslint": "7.32.0"
+    "typescript-plugin-css-modules": "2.4.0"
   }
 }
