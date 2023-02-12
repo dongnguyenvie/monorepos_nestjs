@@ -9,11 +9,13 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:client": "turbo run build --filter=@noinghe/client",
     "build:graph": "turbo run build --graph=architecture.html",
     "dev": "turbo run dev --parallel",
     "dev:admin": "turbo run dev --filter=@noinghe/api --filter=@noinghe/client-admin --parallel",
     "dev:api": "turbo run dev --filter=@noinghe/api",
     "dev:admin:client": "turbo run dev --filter=@noinghe/client-admin",
+    "dev:client": "turbo run dev --filter=@noinghe/client",
     "codegen": "turbo run codegen",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
