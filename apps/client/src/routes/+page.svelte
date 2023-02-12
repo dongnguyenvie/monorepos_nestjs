@@ -8,7 +8,6 @@
 	<title>Home</title>
 	<meta name="description" content="homepage" />
 </svelte:head>
-
 <Redirect to={ROUTES.rooms} />
 
 <style>
