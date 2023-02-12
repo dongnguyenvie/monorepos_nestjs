@@ -10,6 +10,7 @@
   "scripts": {
     "build": "turbo run build",
     "build:client": "turbo run build --filter=@noinghe/client",
+    "build:client:admin": "turbo run build --filter=@noinghe/client-admin",
     "build:graph": "turbo run build --graph=architecture.html",
     "dev": "turbo run dev --parallel",
     "dev:admin": "turbo run dev --filter=@noinghe/api --filter=@noinghe/client-admin --parallel",
