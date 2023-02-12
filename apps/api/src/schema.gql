@@ -297,6 +297,11 @@ type Query {
   getBlog(input: GetBlogInput!): GetBlogOutput!
 
   """
+  {"publ":false,"t":"Lấy thông tin blog","desc":"","sys":false,"sub":false,"gr":"blog","d":false}
+  """
+  getBlog2(input: GetBlogInput!): GetBlogOutput!
+
+  """
   {"publ":false,"t":"Lấy danh sách blog","desc":"","sys":false,"sub":false,"gr":"blog","d":false}
   """
   getBlogs(input: GetBlogsInput!): GetBlogsOutput!

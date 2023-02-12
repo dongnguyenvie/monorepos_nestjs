@@ -25,6 +25,14 @@ export class BlogResolver {
   @Query(() => GetBlogOutput, {
     description: GraphqlDescription.API().withTitle('Lấy thông tin blog').withGroup(API_GROUP).build(),
   })
+  async getBlog2(@Args('input') input: GetBlogInput) {
+    return this.blogSvc.findById(input.id);
+  }
+
+  @PoliciesGuard()
+  @Query(() => GetBlogOutput, {
+    description: GraphqlDescription.API().withTitle('Lấy thông tin blog').withGroup(API_GROUP).build(),
+  })
   async getBlog(@Args('input') input: GetBlogInput) {
     return this.blogSvc.findById(input.id);
   }
