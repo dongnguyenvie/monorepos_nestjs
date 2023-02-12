@@ -2,7 +2,7 @@ name: CI to Docker Hub
 
 on:
   push:
-    branches: [staging]
+    branches: [prod/api]
   # pull_request:
   #   branches: [main]
 
@@ -20,4 +20,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS_API }}
       - name: rsync over ssh
-        run: ssh -o StrictHostKeyChecking=no root@45.77.254.109 "cd ~/workspace/noinghe && git checkout master && git pull && sh ./build-prod-80.sh"
+        run: ssh -o StrictHostKeyChecking=no root@45.77.254.109 "cd ~/workspace/noinghe && git checkout prod/api && git pull && sh ./build-prod-80.sh"
