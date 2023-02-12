@@ -18,6 +18,7 @@ async function bootstrap() {
   // app.useGlobalPipes(new ValidationPipe());
   // app.useGlobalInterceptors(new ErrorsInterceptor());
 
+  
   await app.listen(configService.get('PORT') || 7000);
 }
 bootstrap();

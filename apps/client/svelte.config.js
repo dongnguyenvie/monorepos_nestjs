@@ -10,11 +10,13 @@ import autoprefixer from 'autoprefixer';
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: preprocess({
-		postcss: {
-			plugins: [tailwindcss(), autoprefixer()]
-		}
-	}),
+	preprocess: [
+		preprocess({
+			postcss: {
+				plugins: [tailwindcss(), autoprefixer()]
+			}
+		})
+	],
 
 	kit: {
 		adapter: adapter(),

@@ -26,8 +26,6 @@
 
 	const roomExpired = parseInt(import.meta.env.VITE_ROOM_EXPIRED || 300);
 
-	console.log(111, dayjs);
-
 	$: canClear = !clients.length && dayjs().unix() - lastUpdatedAt > roomExpired;
 
 	$: clientSlots = Array.from(Array(capacity || 0)).map((_, index) => clients[index] || null);
